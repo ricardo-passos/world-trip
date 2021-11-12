@@ -7,12 +7,7 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image'
 
-type Props = {
-  title: string
-  banner: string
-}
-
-function Hero({ title, banner }: Props) {
+function Hero() {
   const isWideScreen = useBreakpointValue({
     base: false,
     md: true,
@@ -22,7 +17,8 @@ function Hero({ title, banner }: Props) {
   return (
     <Center position='relative' w='100%' h={['150px', null, '500px']}>
       <Image
-        src={banner}
+        src='/europe-background.jpg'
+        alt='imagem representando um estado'
         layout='fill'
         objectFit='cover'
         objectPosition='center'
@@ -47,13 +43,13 @@ function Hero({ title, banner }: Props) {
             bottom='65px'
             left='50px'
           >
-            {title}
+            Europe
           </Heading>
         </Grid>
       ) : (
         <Box position='absolute'>
           <Heading fontWeight='600' fontSize={['28px', null, '48px']}>
-            {title}
+            Europe
           </Heading>
         </Box>
       )}

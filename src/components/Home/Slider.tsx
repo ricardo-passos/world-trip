@@ -36,6 +36,46 @@ function Carousel() {
             flexDirection='column'
             position='relative'
           >
+            <Image
+              src='/europe-background.jpg'
+              alt='Estátua da liberdade'
+              layout='fill'
+              objectFit='cover'
+              quality={isWideScreen ? 100 : 50}
+            />
+            <Box position='absolute'>
+              <Link href='/europe' passHref>
+                <ChakraLink>
+                  <Text
+                    as='strong'
+                    color='light.100'
+                    fontWeight='700'
+                    fontSize={['24px', null, '48px']}
+                  >
+                    Europa
+                  </Text>
+                  <Text
+                    as='span'
+                    fontWeight='700'
+                    fontSize={['14px', null, '24px']}
+                    color='light.300'
+                    d='block'
+                  >
+                    O continente mais antigo.
+                  </Text>
+                </ChakraLink>
+              </Link>
+            </Box>
+          </Center>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Center
+            h={['250px', null, '450px']}
+            d='flex'
+            textAlign='center'
+            flexDirection='column'
+            position='relative'
+          >
             <Box filter='brightness(0.65)' boxSize='100%'>
               <Image
                 src='/north-america-background.jpg'
@@ -64,46 +104,6 @@ function Carousel() {
                     d='block'
                   >
                     O novo mundo.
-                  </Text>
-                </ChakraLink>
-              </Link>
-            </Box>
-          </Center>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Center
-            h={['250px', null, '450px']}
-            d='flex'
-            textAlign='center'
-            flexDirection='column'
-            position='relative'
-          >
-            <Image
-              src='/europe-background.jpg'
-              alt='Estátua da liberdade'
-              layout='fill'
-              objectFit='cover'
-              quality={isWideScreen ? 100 : 50}
-            />
-            <Box position='absolute'>
-              <Link href='/europe' passHref>
-                <ChakraLink>
-                  <Text
-                    as='strong'
-                    color='light.100'
-                    fontWeight='700'
-                    fontSize={['24px', null, '48px']}
-                  >
-                    Europa
-                  </Text>
-                  <Text
-                    as='span'
-                    fontWeight='700'
-                    fontSize={['14px', null, '24px']}
-                    color='light.300'
-                    d='block'
-                  >
-                    O continente mais antigo.
                   </Text>
                 </ChakraLink>
               </Link>

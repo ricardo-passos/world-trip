@@ -4,7 +4,7 @@
       "id": 1,
       "continent": "Europa",
       "route": "europe",
-      "banner": "http://localhost:3000/europe-background.jpg",
+      "banner": "europe-background.jpg",
       "subtitle": "O continente mais antigo.",
       "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
       "countries": 50,
@@ -13,32 +13,32 @@
         {
           "country": "Reino Unido",
           "city": "Londres",
-          "icon": "http://localhost:3000/icons/england.png",
-          "banner": "http://localhost:3000/cities/london.jpg"
+          "icon": "icons/england.png",
+          "banner": "cities/london.jpg"
         },
         {
           "country": "França",
           "city": "Paris",
-          "icon": "http://localhost:3000/icons/france.png",
-          "banner": "http://localhost:3000/cities/paris.jpg"
+          "icon": "icons/france.png",
+          "banner": "cities/paris.jpg"
         },
         {
           "country": "Itália",
           "city": "Roma",
-          "icon": "http://localhost:3000/icons/italy.png",
-          "banner": "http://localhost:3000/cities/rome.jpg"
+          "icon": "icons/italy.png",
+          "banner": "cities/rome.jpg"
         },
         {
           "country": "República Tcheca",
           "city": "Praga",
-          "icon": "http://localhost:3000/icons/czech-republic.png",
-          "banner": "http://localhost:3000/cities/praga.jpg"
+          "icon": "icons/czech-republic.png",
+          "banner": "cities/praga.jpg"
         },
         {
           "country": "Holanda",
           "city": "Amsterdã",
-          "icon": "http://localhost:3000/icons/netherlands.png",
-          "banner": "http://localhost:3000/cities/amsterdam.jpg"
+          "icon": "icons/netherlands.png",
+          "banner": "cities/amsterdam.jpg"
         }
       ]
     },
@@ -46,7 +46,7 @@
       "id": 2,
       "continent": "América do Norte",
       "route": "north-america",
-      "banner": "http://localhost:3000/north-america-background.jpg",
+      "banner": "north-america-background.jpg",
       "subtitle": "A parte norte do novo mundo.",
       "description": "Depois que Cristóvão Colombo atingiu as ilhas Bahamas em 1492, diversos exploradores espanhóis, partindo da ilha de Hispaniola, iniciaram o devassamento das terras continentais correspondentes à América Central e do Norte. Em 1519, Hernán Cortés iniciou a conquista do México.",
       "countries": 4,
@@ -55,26 +55,26 @@
         {
           "country": "EUA",
           "city": "Nova Iorque",
-          "icon": "http://localhost:3000/icons/eua.png",
-          "banner": "http://localhost:3000/cities/new-york.jpg"
+          "icon": "icons/eua.png",
+          "banner": "cities/new-york.jpg"
         },
         {
           "country": "EUA",
           "city": "Los Angeles",
-          "icon": "http://localhost:3000/icons/eua.png",
-          "banner": "http://localhost:3000/cities/los-angeles.jpg"
+          "icon": "icons/eua.png",
+          "banner": "cities/los-angeles.jpg"
         },
         {
           "country": "EUA",
           "city": "Miami",
-          "icon": "http://localhost:3000/icons/eua.png",
-          "banner": "http://localhost:3000/cities/miami.jpg"
+          "icon": "icons/eua.png",
+          "banner": "cities/miami.jpg"
         },
         {
           "country": "Canadá",
           "city": "Toronto",
-          "icon": "http://localhost:3000/icons/canada.png",
-          "banner": "http://localhost:3000/cities/toronto.jpg"
+          "icon": "icons/canada.png",
+          "banner": "cities/toronto.jpg"
         }
       ]
     }

@@ -1,3 +1,0 @@
-{
-  "/continents/:continent": "/continents?route=:continent"
-}

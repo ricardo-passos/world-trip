@@ -8,6 +8,9 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image'
 
+// db
+import database from '../../../server/db.json'
+
 type CityCardProps = {
   country: string
   city: string
@@ -36,7 +39,7 @@ function CityCard({ country, city, banner, icon }: CityCardProps) {
     >
       <Box>
         <Image
-          src={banner}
+          src={`/${banner}`}
           alt={city}
           height='173px'
           width='256px'
@@ -59,7 +62,7 @@ function CityCard({ country, city, banner, icon }: CityCardProps) {
         </Flex>
         <Box>
           <Image
-            src={icon}
+            src={`/${icon}`}
             alt={city}
             width='30px'
             height='30px'
@@ -71,35 +74,24 @@ function CityCard({ country, city, banner, icon }: CityCardProps) {
   )
 }
 
-type Props = {
-  mostVisitedCities: {
-    country: string
-    city: string
-    icon: string
-    banner: string
-  }[]
-}
-
-function Cities({ mostVisitedCities }: Props) {
+function Cities() {
   return (
     <Box px={['16px', '32px', null, '140px']} pt='32px' pb='16px'>
       <Heading color='dark.400' fontWeight='500' fontSize='24px' mb='20px'>
         Cidades
       </Heading>
-      <Wrap
-        columns={[1, 2, 4]}
-        spacing='20px'
-        justify='center'
-      >
-        {mostVisitedCities.map(({ country, city, icon, banner }) => (
-          <CityCard
-            key={city}
-            country={country}
-            city={city}
-            banner={banner}
-            icon={icon}
-          />
-        ))}
+      <Wrap columns={[1, 2, 4]} spacing='20px' justify='center'>
+        {database.continents[0].most_visited_cities.map(
+          ({ country, city, icon, banner }) => (
+            <CityCard
+              key={city}
+              country={country}
+              city={city}
+              banner={banner}
+              icon={icon}
+            />
+          )
+        )}
       </Wrap>
     </Box>
   )

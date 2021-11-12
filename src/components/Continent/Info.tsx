@@ -6,7 +6,7 @@ type Props = {
   languages: number
 }
 
-function Info({ description, countries, languages }: Props) {
+function Info() {
   return (
     <Flex
       direction={['column', null, null, 'row']}
@@ -23,7 +23,10 @@ function Info({ description, countries, languages }: Props) {
           pt='24px'
           textAlign='justify'
         >
-          {description}
+          A Europa é, por convenção, um dos seis continentes do mundo.
+          Compreendendo a península ocidental da Eurásia, a Europa geralmente
+          divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
+          rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
         </Text>
       </Box>
       <HStack pt='16px' spacing={['22px', null, '42px']} h='73px'>
@@ -34,7 +37,7 @@ function Info({ description, countries, languages }: Props) {
             fontWeight='600'
             fontSize='24px'
           >
-            {countries}
+            50
           </Text>
           <Text
             as='span'
@@ -54,7 +57,7 @@ function Info({ description, countries, languages }: Props) {
             fontWeight='600'
             fontSize='24px'
           >
-            {languages}
+            24
           </Text>
           <Text
             as='span'
