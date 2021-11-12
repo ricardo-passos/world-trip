@@ -1,6 +1,6 @@
 # World Trip
 
-## What is this web app about?
+## What is this web site about?
 
 It is a challenge from Rocketseat's Ignite curriculum.
 - The goal is to build a web site to practice with Chakra UI.
